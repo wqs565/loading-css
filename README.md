@@ -9,14 +9,11 @@
 
 ### 是什么？
 
-[See the demo](http://lywqs.com/loader)
+[demo演示](http://lywqs.com/loader)
 
-A collection of loading animations written entirely in css.
-Each animation is limited to a small subset of css properties in order
-to avoid expensive painting and layout calculations.
+加载动画完全使用css编写完成。每个动画都限于css属性的一小部分，以避免多余麻烦的绘画和布局计算。
 
-I've posted links below to some fantastic articles that go into this
-in a lot more detail.
+下面发布了一些非常棒的文章，进一步详细的介绍。
 
 ### 安装(install)
 

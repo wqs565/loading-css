@@ -5,11 +5,11 @@
   <img src="https://img.shields.io/bower/v/loaders.css.svg?style=flat-square">
 </p>
 
-Delightful and performance-focused pure css loading animations.
+流畅的css加载动画~
 
-### What is this?
+### 是什么？
 
-[See the demo](http://connoratherton.com/loaders)
+[See the demo](http://lywqs.com/loader)
 
 A collection of loading animations written entirely in css.
 Each animation is limited to a small subset of css properties in order
@@ -18,7 +18,7 @@ to avoid expensive painting and layout calculations.
 I've posted links below to some fantastic articles that go into this
 in a lot more detail.
 
-### Install
+### 安装(install)
 
 ```
 bower install loaders.css
@@ -28,12 +28,12 @@ bower install loaders.css
 npm i --save-dev loaders.css
 ```
 
-### Usage
+### 使用(Usage)
 
 ##### Standard
-- Include `loaders.min.css`
-- Create an element and add the animation class (e.g. `<div class="loader-inner ball-pulse"></div>`)
-- Insert the appropriate number of `<div>`s into that element
+- 引入 `loaders.min.css`
+- 创建一个元素并添加动动画 (例如： `<div class="loader-inner ball-pulse"></div>`)
+- 将适当的 div 插入 元素内部
 
 ##### jQuery (optional)
 - Include `loaders.min.css`, jQuery, and `loaders.css.js`
@@ -42,11 +42,11 @@ npm i --save-dev loaders.css
 - To initialise loaders that are added after page load select the div and call `loaders` on them (e.g. `$('.loader-inner').loaders()`)
 - Enjoy
 
-### Customising
+### diy个性定制
 
-##### Changing the background color
+##### 改变背景颜色
 
-Add styles to the correct child `div` elements
+对正确的子 div们元素添加样式，如下
 
 ``` css
 .ball-grid-pulse > div {
@@ -54,33 +54,32 @@ Add styles to the correct child `div` elements
 }
 ```
 
-### Browser support
+### 支持的浏览器如下
 
-Check the [can I use](http://caniuse.com/#search=css-animation) [tables](http://caniuse.com/#search=css-transform).
-All recent versions of the major browsers are supported and it has support back to IE9.
+支持所有最新版本的主要浏览器，并支持IE9。
 
-Note: The loaders aren't run through autoprefixer, see this [issue](https://github.com/ConnorAtherton/loaders.css/issues/18).
+注意: T不能正常运行 请参考： [issue](https://github.com/ConnorAtherton/loaders.css/issues/18).
 
 IE 11  | Firefox 36 | Chrome 41 | Safari 8
 ------ | ---------- | --------- | --------
 ✔ | ✔ | ✔ | ✔
 
-### Contributing
+### 贡献
 
-Pull requests are welcome! Create another file in `src/animations`
-and load it in `src/loader.scss`.
+欢迎拉请求！创建另一个文件 `src/animations`
+并加载 `src/loader.scss`.
 
-In a separate tab run `gulp --require coffee-script/register`. Open `demo/demo.html`
-in a browser to see your animation running.
+在单独的选项卡运行 `gulp --require coffee-script/register`. 打开 `demo/demo.html`
+在浏览器中就可以看到您的动画运行。
 
-### Further research
+### 讨论
 
 - http://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/
 - http://aerotwist.com/blog/pixels-are-expensive/
 - http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/
 - http://frontendbabel.info/articles/webpage-rendering-101/
 
-### Inspired by loaders.css
+### 灵感来自于 loaders.css
 
 A few other folks have taken loaders and ported them elsewhere.
 
@@ -89,26 +88,12 @@ A few other folks have taken loaders and ported them elsewhere.
 - **iOS** - [ninjaprox](https://github.com/ninjaprox/NVActivityIndicatorView) and [ontovnik](https://github.com/gontovnik/DGActivityIndicatorView)
 - **Android** - [Jack Wang](https://github.com/81813780/AVLoadingIndicatorView) created a library and [technofreaky](https://github.com/technofreaky/Loaders.CSS-Android-App) created an app
 
-### Licence
+### 声明
 
-The MIT License (MIT)
+版权所有（c）2016 wqs.
 
-Copyright (c) 2016 Connor Atherton
+更多技术内容，关注微信公众号：'前端h5'
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+邮箱：wqs565@163.com
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
